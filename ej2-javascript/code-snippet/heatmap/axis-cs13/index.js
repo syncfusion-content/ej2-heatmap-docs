@@ -31,7 +31,6 @@ var heatmap = new ej.heatmap.HeatMap({
           textAlignment:'Center',
           textOverflow: 'Wrap'
         },
-        labelIntersectAction: 'None',
         opposedPosition: true,
         labels: [
             'Month of Feburary 2023',
