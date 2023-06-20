@@ -208,11 +208,11 @@ HeatMap supports formatting the axis labels by using the [labelFormat](../api/he
 
 ### LabelIntersectAction
 
-The HeatMap component provides an option to handle the axis labels when the labels intersects with each other by using the [labelIntersectAction](../api/heatmap/axisModel/#labelintersectaction) property. The following options are available in the labelIntersectAction property.
+The HeatMap component provides an option to handle the axis labels when the labels intersects with each other by using the [labelIntersectAction](../api/heatmap/axisModel/#labelintersectaction) property. The following options are available in the `labelIntersectAction` property.
 
 * None - It specifies that no action is taken, when the axis labels intersect.
-* Trim - It specifies to trim the axis label when they intersect.
-* Rotate45 - It specifies to rotate the axis label when they intersect.
+* Trim - It specifies to trim the axis labels when they intersect.
+* Rotate45 - It specifies to rotate the axis labels when they intersect.
 * MultipleRows - It specifies to show all the axis labels as multiple rows when they intersect.
 
 The below example demonstrates to trim the axis labels by using the `labelIntersectAction` property.
@@ -246,7 +246,7 @@ The below example demonstrates to trim the axis labels by using the `labelInters
 
 ### LabelRotation
 
-The HeatMap component provides an option to set the angle to rotate the text in the axis labels by using [labelRotation](../api/heatmap/axisModel/#labelrotation) property.
+The HeatMap component provides an option to set the angle to rotate the text for the axis labels by using [labelRotation](../api/heatmap/axisModel/#labelrotation) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -277,13 +277,13 @@ The HeatMap component provides an option to set the angle to rotate the text in 
 
 ### TextStyle
 
-The HeatMap component provides an option to customize the text in the axis labels by using the following properties.
+The HeatMap component provides an option to customize the text for the axis labels by using the following properties.
 
-* [color](../api/heatmap/fontModel/#color) - It is used to customize the color of the text in the axis labels.
-* [fontFamily](../api/heatmap/fontModel/#fontfamily) - It is used to customize the font family of the text in the axis labels.
-* [fontStyle](../api/heatmap/fontModel/#fontstyle) - It is used to customize the font style of the text in the axis labels.
-* [fontWeight](../api/heatmap/fontModel/#fontweight) - It is used to customize the font weight of the text in the axis labels.
-* [size](../api/heatmap/fontModel/#size) - It is used to customize the size of the text in the axis labels.
+* [color](../api/heatmap/fontModel/#color) - It is used to customize the color of the text for the axis labels.
+* [fontFamily](../api/heatmap/fontModel/#fontfamily) - It is used to customize the font family of the text for the axis labels.
+* [fontStyle](../api/heatmap/fontModel/#fontstyle) - It is used to customize the font style of the text for the axis labels.
+* [fontWeight](../api/heatmap/fontModel/#fontweight) - It is used to customize the font weight of the text for the axis labels.
+* [size](../api/heatmap/fontModel/#size) - It is used to customize the size of the text for the axis labels.
 * [textAlignment](../api/heatmap/fontModel/#textalignment) - It is used to place and align the axis labels.
 * [textOverflow](../api/heatmap/fontModel/#textoverflow) - It is used to trim or wrap the axis labels when the label overflows the intended space.
 
