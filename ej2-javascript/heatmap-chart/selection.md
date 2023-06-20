@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Selection in ##Platform_Name## Heatmap chart control
 
-In the HeatMap, the cell selection is used to select the single or multiple heat map cells at runtime and get the selected cell details using the [cellSelected](../api/heatmap/#cellselected) event. You can enable the cell selection using the [allowSelection](../api/heatmap/#allowselection) property.
+In the HeatMap, the cell selection is used to select the single or multiple HeatMap cells at runtime and get the selected cell details using the [cellSelected](../api/heatmap/#cellselected) event. You can enable the cell selection using the [allowSelection](../api/heatmap/#allowselection) property.
 
 To select multiple cells using different modes of interactions as shown in the below table.
 

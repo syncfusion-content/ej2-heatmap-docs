@@ -11,12 +11,12 @@ domainurl: ##DomainURL##
 
 # Axis in ##Platform_Name## Heatmap chart control
 
-Heat map consists of two axes namely, X-axis and Y-axis that displays the row headers and column headers to plot the data points respectively.
-You can define the type, format, and other customizing options for both axes in the heat map.
+HeatMap consists of two axes namely, X-axis and Y-axis that displays the row headers and column headers to plot the data points respectively.
+You can define the type, format, and other customizing options for both axes in the HeatMap.
 
 ## Types
 
-There are three different axis types available in the heat map, which defines the data type of the axis labels. You can define the axis type by using the [valueType](../api/heatmap/axis/#valuetype) property in the heat map.
+There are three different axis types available in the HeatMap, which defines the data type of the axis labels. You can define the axis type by using the [valueType](../api/heatmap/axis/#valuetype) property in the HeatMap.
 
 ### Category axis
 
@@ -113,7 +113,7 @@ Date-time axis type is used to represent the date-time values in axis labels wit
 
 ## Inversed axis
 
-Heat map supports inversing the axis origin for both axes, where the axis labels are placed in an inversed manner. You can enable axis inversing by enabling the [isInversed](../api/heatmap/axis/#isinversed) property.
+HeatMap supports inversing the axis origin for both axes, where the axis labels are placed in an inversed manner. You can enable axis inversing by enabling the [isInversed](../api/heatmap/axis/#isinversed) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -144,7 +144,7 @@ Heat map supports inversing the axis origin for both axes, where the axis labels
 
 ## Opposed axis
 
-In heat map, you can place the axis label in an opposite position of its default axis label position by using the [opposedPosition](../api/heatmap/axis/#opposedposition) property.
+In HeatMap, you can place the axis label in an opposite position of its default axis label position by using the [opposedPosition](../api/heatmap/axis/#opposedposition) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -175,7 +175,7 @@ In heat map, you can place the axis label in an opposite position of its default
 
 ## Label formatting
 
-Heat map supports formatting the axis labels by using the [labelFormat](../api/heatmap/axis/#labelformat) property. Using this property, you can customize the axis label by global string format ('P', 'C', etc) or customized format like '{value}°C'.
+HeatMap supports formatting the axis labels by using the [labelFormat](../api/heatmap/axis/#labelformat) property. Using this property, you can customize the axis label by global string format ('P', 'C', etc) or customized format like '{value}°C'.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -316,7 +316,7 @@ The HeatMap component provides an option to customize the text in the axis label
 
 ## Axis intervals
 
-In heat map, you can define an interval between the axis labels using the [interval](../api/heatmap/axis/#interval) property. In date-time axis, you can change the interval mode by using the [intervalType](../api/heatmap/axis/#intervaltype) property. The date-time axis supports the following interval types:
+In HeatMap, you can define an interval between the axis labels using the [interval](../api/heatmap/axis/#interval) property. In date-time axis, you can change the interval mode by using the [intervalType](../api/heatmap/axis/#intervaltype) property. The date-time axis supports the following interval types:
 
 * Years
 * Months
@@ -353,7 +353,7 @@ In heat map, you can define an interval between the axis labels using the [inter
 
 ## Axis label increment
 
-Axis label increment in the heat map is used to display the axis labels with regular interval values in numeric and date-time axes. The labels will be displayed with tick gaps when you set the label interval. But, to achieve the same behavior without tick gaps, use the label increment. You can set the axis label increment using the [increment](../api/heatmap/axis/#increment) property and the default value of this property is **1**.
+Axis label increment in the HeatMap is used to display the axis labels with regular interval values in numeric and date-time axes. The labels will be displayed with tick gaps when you set the label interval. But, to achieve the same behavior without tick gaps, use the label increment. You can set the axis label increment using the [increment](../api/heatmap/axis/#increment) property and the default value of this property is **1**.
 
 {% if page.publishingplatform == "typescript" %}
 
