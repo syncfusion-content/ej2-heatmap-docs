@@ -309,6 +309,45 @@ You can display the axis labels at specific time intervals along with the date-t
 {% previewsample "page.domainurl/code-snippet/heatmap/axis-cs9" %}
 {% endif %}
 
+## Axis labels customization
+
+The axis labels can be customized by using the following properties.
+
+* [color](../api/heatmap/fontModel/#color) - It is used to customize the color of the text for the axis labels.
+* [fontFamily](../api/heatmap/fontModel/#fontfamily) - It is used to customize the font family of the text for the axis labels.
+* [fontStyle](../api/heatmap/fontModel/#fontstyle) - It is used to customize the font style of the text for the axis labels.
+* [fontWeight](../api/heatmap/fontModel/#fontweight) - It is used to customize the font weight of the text for the axis labels.
+* [size](../api/heatmap/fontModel/#size) - It is used to customize the size of the text for the axis labels.
+* [textAlignment](../api/heatmap/fontModel/#textalignment) - It is used to place and align the axis labels.
+* [textOverflow](../api/heatmap/fontModel/#textoverflow) - It is used to trim or wrap the axis labels when the label overflows the intended space.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/heatmap/axis-cs11/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/axis-cs11/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs11" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/heatmap/axis-cs11/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/axis-cs11/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs11" %}
+{% endif %}
+
 ## Multilevel Labels
 
 Multilevel labels are used to classify a group of axis labels as a single category, which is then displayed with a label. By using [multiLevelLabels](../api/heatmap/axis/#multilevellabels), you can add multiple levels on top of the axis labels.
