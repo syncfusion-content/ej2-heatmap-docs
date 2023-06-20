@@ -30,7 +30,7 @@ let heatmapData: any [] = [
       },
       xAxis: {
         enableTrim:'Trim',
-		labelIntersectAction:'Trim',
+        labelIntersectAction:'Trim',
         opposedPosition: true,
         labels: [
             'Month of Feburary 2023',
