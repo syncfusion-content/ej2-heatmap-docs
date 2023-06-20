@@ -22,8 +22,7 @@ var heatmap = new ej.heatmap.HeatMap({
         },
       },
       xAxis: {
-        enableTrim:'Trim',
-        labelIntersectAction:'Trim',
+        labelRotation:45,
         opposedPosition: true,
         labels: [
             'Month of Feburary 2023',
@@ -40,8 +39,7 @@ var heatmap = new ej.heatmap.HeatMap({
         ],
       },
       yAxis: {
-        enableTrim:'Trim',
-        labelIntersectAction:'Trim',
+        labelRotation:45,
         labels: [
           'Ace Apparels',
           'Alpha Apparels',

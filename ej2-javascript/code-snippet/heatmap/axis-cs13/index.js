@@ -22,8 +22,16 @@ var heatmap = new ej.heatmap.HeatMap({
         },
       },
       xAxis: {
-        enableTrim:'Trim',
-        labelIntersectAction:'Trim',
+        textStyle: {
+          color:'red',
+          size: '15px',
+          fontWeight: '650',
+          fontStyle: 'Normal',
+          fontFamily: 'Segoe UI',
+          textAlignment:'Center',
+          textOverflow: 'Wrap'
+        },
+        labelIntersectAction: 'None',
         opposedPosition: true,
         labels: [
             'Month of Feburary 2023',
@@ -40,8 +48,16 @@ var heatmap = new ej.heatmap.HeatMap({
         ],
       },
       yAxis: {
-        enableTrim:'Trim',
-        labelIntersectAction:'Trim',
+        textStyle: {
+          color:'red',
+          size: '15px',
+          fontWeight: '650',
+          fontStyle: 'Normal',
+          fontFamily: 'Segoe UI',
+          textAlignment:'Center',
+          textOverflow: 'Wrap',
+        },
+        maxLabelLength:70,
         labels: [
           'Ace Apparels',
           'Alpha Apparels',

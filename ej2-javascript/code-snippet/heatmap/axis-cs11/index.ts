@@ -29,13 +29,8 @@ let heatmapData: any [] = [
         },
       },
       xAxis: {
-        textStyle: {
-          size: '15px',
-          fontWeight: '650',
-          fontStyle: 'Normal',
-          fontFamily: 'Segoe UI',
-          textOverflow: 'Wrap'
-        },
+        enableTrim:'Trim',
+		labelIntersectAction:'Trim',
         opposedPosition: true,
         labels: [
             'Month of Feburary 2023',
@@ -52,14 +47,8 @@ let heatmapData: any [] = [
         ],
       },
       yAxis: {
-        textStyle: {
-          size: '15px',
-          fontWeight: '650',
-          fontStyle: 'Normal',
-          fontFamily: 'Segoe UI',
-          textOverflow: 'Wrap',
-        },
-        maxLabelLength:70,
+        enableTrim:'Trim',
+		labelIntersectAction:'Trim',
         labels: [
           'Ace Apparels',
           'Alpha Apparels',
