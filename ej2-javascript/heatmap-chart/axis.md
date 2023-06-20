@@ -204,6 +204,116 @@ Heat map supports formatting the axis labels by using the [labelFormat](../api/h
 {% previewsample "page.domainurl/code-snippet/heatmap/axis-cs6" %}
 {% endif %}
 
+## Axis labels customization
+
+### LabelIntersectAction
+
+The HeatMap component provides an option to handle the axis labels when the labels intersects with each other by using the [labelIntersectAction](../api/heatmap/axisModel/#labelintersectaction) property. The following options are available in the labelIntersectAction property.
+
+* None - It specifies that no action is taken, when the axis labels intersect.
+* Trim - It specifies to trim the axis label when they intersect.
+* Rotate45 - It specifies to rotate the axis label when they intersect.
+* MultipleRows - It specifies to show all the axis labels as multiple rows when they intersect.
+
+The below example demonstrates to trim the axis labels by using the `labelIntersectAction` property.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/heatmap/axis-cs11/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/axis-cs11/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs11" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/heatmap/axis-cs11/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/axis-cs11/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs11" %}
+{% endif %}
+
+### LabelRotation
+
+The HeatMap component provides an option to set the angle to rotate the text in the axis labels by using [labelRotation](../api/heatmap/axisModel/#labelrotation) property.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/heatmap/axis-cs12/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/axis-cs12/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs12" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/heatmap/axis-cs12/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/axis-cs12/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs12" %}
+{% endif %}
+
+### TextStyle
+
+The HeatMap component provides an option to customize the text in the axis labels by using the following properties.
+
+* [color](../api/heatmap/fontModel/#color) - It is used to customize the color of the text in the axis labels.
+* [fontFamily](../api/heatmap/fontModel/#fontfamily) - It is used to customize the font family of the text in the axis labels.
+* [fontStyle](../api/heatmap/fontModel/#fontstyle) - It is used to customize the font style of the text in the axis labels.
+* [fontWeight](../api/heatmap/fontModel/#fontweight) - It is used to customize the font weight of the text in the axis labels.
+* [size](../api/heatmap/fontModel/#size) - It is used to customize the size of the text in the axis labels.
+* [textAlignment](../api/heatmap/fontModel/#textalignment) - It is used to place and align the axis labels.
+* [textOverflow](../api/heatmap/fontModel/#textoverflow) - It is used to trim or wrap the axis labels when the label overflows the intended space.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/heatmap/axis-cs13/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/axis-cs13/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs13" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/heatmap/axis-cs13/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/axis-cs13/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs13" %}
+{% endif %}
+
 ## Axis intervals
 
 In heat map, you can define an interval between the axis labels using the [interval](../api/heatmap/axis/#interval) property. In date-time axis, you can change the interval mode by using the [intervalType](../api/heatmap/axis/#intervaltype) property. The date-time axis supports the following interval types:
@@ -307,45 +417,6 @@ You can display the axis labels at specific time intervals along with the date-t
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/heatmap/axis-cs9" %}
-{% endif %}
-
-## Axis labels customization
-
-The axis labels can be customized by using the following properties.
-
-* [color](../api/heatmap/fontModel/#color) - It is used to customize the color of the text for the axis labels.
-* [fontFamily](../api/heatmap/fontModel/#fontfamily) - It is used to customize the font family of the text for the axis labels.
-* [fontStyle](../api/heatmap/fontModel/#fontstyle) - It is used to customize the font style of the text for the axis labels.
-* [fontWeight](../api/heatmap/fontModel/#fontweight) - It is used to customize the font weight of the text for the axis labels.
-* [size](../api/heatmap/fontModel/#size) - It is used to customize the size of the text for the axis labels.
-* [textAlignment](../api/heatmap/fontModel/#textalignment) - It is used to place and align the axis labels.
-* [textOverflow](../api/heatmap/fontModel/#textoverflow) - It is used to trim or wrap the axis labels when the label overflows the intended space.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/heatmap/axis-cs11/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/heatmap/axis-cs11/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs11" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/heatmap/axis-cs11/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/heatmap/axis-cs11/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs11" %}
 {% endif %}
 
 ## Multilevel Labels
