@@ -15,7 +15,7 @@ This section describes the HeatMap chart control event that gets triggered when 
 
 ## cellClick
 
-The `cellClick` event will be triggered when clicking on the HeatMap cell. To know more about the arguments of this event, refer [here](../api/heatmap/iCellClickEventArgs/).
+The `cellClick` event will be triggered when clicking on the HeatMap cell. To know more about the arguments of this event, refer [here](../api/heatmap/cellclick/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,7 +46,7 @@ The `cellClick` event will be triggered when clicking on the HeatMap cell. To kn
 
 ## cellDoubleClick
 
-The `cellDoubleClick` event will be triggered when clicking on the HeatMap cell. To know more about the arguments of this event, refer [here](../api/heatmap/iCellDoubleClickEventArgs/).
+The `cellDoubleClick` event will be triggered when clicking on the HeatMap cell. To know more about the arguments of this event, refer [here](../api/heatmap/celldoubleclick/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -77,7 +77,7 @@ The `cellDoubleClick` event will be triggered when clicking on the HeatMap cell.
 
 ## cellRender
 
-The `cellRender` event will be triggered before rendering of each HeatMap cell. To know more about the arguments of this event, refer [here](../api/heatmap/iCellEventArgs/).
+The `cellRender` event will be triggered before rendering of each HeatMap cell. To know more about the arguments of this event, refer [here](../api/heatmap/cellrender/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -107,7 +107,7 @@ The `cellRender` event will be triggered before rendering of each HeatMap cell. 
 
 ## cellSelected
 
-The `cellSelected` event is triggered when a cell is selected in the HeatMap. To know more about the arguments of this event, refer [here](../api/heatmap/iSelectedEventArgs/).
+The `cellSelected` event is triggered when a cell is selected in the HeatMap. To know more about the arguments of this event, refer [here](../api/heatmap/cellselected/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -143,7 +143,7 @@ The `created` event is triggered after HeatMap is completely rendered.
 
 ## legendRender
 
-The `legendRender` event is triggered before the legend is rendered. To know more about the arguments of this event, refer [here](../api/heatmap/iLegendRenderEventArgs/).
+The `legendRender` event is triggered before the legend is rendered. To know more about the arguments of this event, refer [here](../api/heatmap/legendrender/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -173,7 +173,7 @@ The `legendRender` event is triggered before the legend is rendered. To know mor
 
 ## load
 
-The `load` event is triggered before HeatMap gets loaded. To know more about the arguments of this event, refer [here](../api/heatmap/iLoadedEventArgs/).
+The `load` event is triggered before HeatMap gets loaded. To know more about the arguments of this event, refer [here](../api/heatmap/load/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -203,7 +203,7 @@ The `load` event is triggered before HeatMap gets loaded. To know more about the
 
 ## loaded
 
-The `loaded` event is triggered after HeatMap is loaded. To know more about the arguments of this event, refer [here](../api/heatmap/iLoadedEventArgs/).
+The `loaded` event is triggered after HeatMap is loaded. To know more about the arguments of this event, refer [here](../api/heatmap/loaded/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -233,7 +233,7 @@ The `loaded` event is triggered after HeatMap is loaded. To know more about the 
 
 ## resized
 
-The `resized` event is triggered to notify the resize of the HeatMap when the window is resized. To know more about the arguments of this event, refer [here](../api/heatmap/iResizeEventArgs/).
+The `resized` event is triggered to notify the resize of the HeatMap when the window is resized. To know more about the arguments of this event, refer [here](../api/heatmap/resized/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -263,7 +263,7 @@ The `resized` event is triggered to notify the resize of the HeatMap when the wi
 
 ## tooltipRender
 
-The `tooltipRender` event is triggered before the tooltip of the HeatMap is rendered on the HeatMap cell. To know more about the arguments of this event, refer [here](../api/heatmap/iTooltipEventArgs/).
+The `tooltipRender` event is triggered before the tooltip of the HeatMap is rendered on the HeatMap cell. To know more about the arguments of this event, refer [here](../api/heatmap/tooltiprender/).
 
 {% if page.publishingplatform == "typescript" %}
 
