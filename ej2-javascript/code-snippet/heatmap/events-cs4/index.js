@@ -14,7 +14,7 @@ var heatmapData = [
 
 var heatmap = new ej.heatmap.HeatMap({
     cellSelected: function(args) {
-       console.log('cell selected event triggered!!!', args);
+       console.log('The cell selected event has been triggered!!!', args);
     },
     titleSettings: {
             text: 'Sales Revenue per Employee (in 1000 US$)',

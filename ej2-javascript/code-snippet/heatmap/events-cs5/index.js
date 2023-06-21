@@ -14,7 +14,7 @@ var heatmapData = [
 
 var heatmap = new ej.heatmap.HeatMap({
     legendRender: function(args) {
-       console.log('legend render event triggered!!!', args);
+       console.log('The legend render event has been triggered!!!', args);
     },
     titleSettings: {
             text: 'Sales Revenue per Employee (in 1000 US$)',

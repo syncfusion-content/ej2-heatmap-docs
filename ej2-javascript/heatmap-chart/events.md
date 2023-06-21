@@ -15,7 +15,7 @@ This section describes the HeatMap chart control event, which occurs when the re
 
 ## cellClick
 
-When you click on a HeatMap cell, the event [cellClick](../api/heatmap/cellclick/) is triggered. To know more about the arguments of this event, refer [here](../api/heatmap/iCellClickEventArgs/).
+When you click on a HeatMap cell, the [cellClick](../api/heatmap/cellclick/) event is triggered. To know more about the arguments of this event, refer [here](../api/heatmap/iCellClickEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 

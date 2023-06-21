@@ -20,7 +20,7 @@ let heatmapData: any [] = [
 
 let heatmap: HeatMap = new HeatMap({
     created: function(args) {
-        console.log('created render event is triggered!!!');
+        console.log('The created event has been triggered!!!');
     },
      titleSettings: {
              text: 'Sales Revenue per Employee (in 1000 US$)',

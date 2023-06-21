@@ -208,14 +208,14 @@ HeatMap supports formatting the axis labels by using the [labelFormat](../api/he
 
 ### Customizing the text style
 
-The text style of the axis labels can be customized using the following properties.
+The text style of the axis labels can be customized using the following properties available in [textStyle](../api/heatmap/axisModel/#textstyle) property.
 
 * [color](../api/heatmap/fontModel/#color) - It is used to change the text color for the axis labels.
 * [fontFamily](../api/heatmap/fontModel/#fontfamily) - It is used to change the font family used for the axis labels.
 * [fontStyle](../api/heatmap/fontModel/#fontstyle) - It is used to change the font style of the axis labels.
 * [fontWeight](../api/heatmap/fontModel/#fontweight) - It is used to change the font weight of the axis labels.
 * [size](../api/heatmap/fontModel/#size) - It is used to change the font size for the axis labels.
-* [textAlignment](../api/heatmap/fontModel/#textalignment) - It is used to position and align axis labels. This property allows you to specify values such as **Near**, **Centre**, and **Far**.
+* [textAlignment](../api/heatmap/fontModel/#textalignment) - It is used to position and align axis labels. This property allows you to specify values such as **Near**, **Center**, and **Far**.
 * [textOverflow](../api/heatmap/fontModel/#textoverflow) - When the axis label exceeds the intended space, this property is used to trim or wrap it. This property takes values such as **None**, **Trim**, and **Wrap**.
 
 {% if page.publishingplatform == "typescript" %}

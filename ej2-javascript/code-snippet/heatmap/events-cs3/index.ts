@@ -19,7 +19,7 @@ let heatmapData: any [] = [
 
 let heatmap: HeatMap = new HeatMap({
     cellRender: function(args) {
-        console.log('cell render event triggered!!!', args);
+        console.log('The cell render event has been triggered!!!', args);
     },
      titleSettings: {
              text: 'Sales Revenue per Employee (in 1000 US$)',

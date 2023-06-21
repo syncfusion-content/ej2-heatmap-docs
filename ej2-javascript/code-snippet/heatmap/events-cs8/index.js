@@ -14,7 +14,7 @@ var heatmapData = [
 
 var heatmap = new ej.heatmap.HeatMap({
     resized: function(args) {
-       console.log('resized event triggered!!!', args);
+       console.log('The resized event has been triggered!!!', args);
     },
     titleSettings: {
             text: 'Sales Revenue per Employee (in 1000 US$)',

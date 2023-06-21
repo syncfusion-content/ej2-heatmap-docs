@@ -20,7 +20,7 @@ let heatmapData: any [] = [
 
 let heatmap: HeatMap = new HeatMap({
     tooltipRender: function(args) {
-        console.log('tooltip render event triggered!!!', args);
+        console.log('The tooltip render event has been triggered!!!', args);
     },
      titleSettings: {
              text: 'Sales Revenue per Employee (in 1000 US$)',

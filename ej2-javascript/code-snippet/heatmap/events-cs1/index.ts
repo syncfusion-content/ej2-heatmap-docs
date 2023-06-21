@@ -19,7 +19,7 @@ let heatmapData: any [] = [
 
 let heatmap: HeatMap = new HeatMap({
     cellClick: function(args) {
-        console.log('cell click event triggered!!!', args);
+        console.log('The cell click event has been triggered!!!', args);
     },
      titleSettings: {
              text: 'Sales Revenue per Employee (in 1000 US$)',

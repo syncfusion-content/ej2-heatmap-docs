@@ -19,7 +19,7 @@ let heatmapData: any [] = [
 
 let heatmap: HeatMap = new HeatMap({
     load: function(args) {
-        console.log('load event triggered!!!', args);
+        console.log('The load event has been triggered!!!', args);
     },
      titleSettings: {
              text: 'Sales Revenue per Employee (in 1000 US$)',

@@ -14,7 +14,7 @@ var heatmapData = [
 
 var heatmap = new ej.heatmap.HeatMap({
     loaded: function(args) {
-       console.log('loaded event triggered!!!', args);
+       console.log('The loaded event has been triggered!!!', args);
     },
     titleSettings: {
             text: 'Sales Revenue per Employee (in 1000 US$)',

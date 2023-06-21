@@ -19,7 +19,7 @@ let heatmapData: any [] = [
 
 let heatmap: HeatMap = new HeatMap({
     cellDoubleClick: function(args) {
-        console.log('cell double click event triggered!!!', args);
+        console.log('The cell double click event has been triggered!!!', args);
     },
      titleSettings: {
              text: 'Sales Revenue per Employee (in 1000 US$)',
