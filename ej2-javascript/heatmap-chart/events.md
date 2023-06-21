@@ -11,25 +11,11 @@ domainurl: ##DomainURL##
 
 # Events in ##Platform_Name## HeatMap chart control
 
-This section describes the HeatMap chart control event that gets triggered when corresponding operations are performed. The events should be provided to the HeatMap chart by using the [HeatMap chart events](../api/heatmap#events).
+This section describes the HeatMap chart control event that gets triggered when corresponding operations are performed.
 
 ## cellClick
 
-The `cellClick` event will be triggered when clicking on the HeatMap cell. The following properties are available in the event argument of the `cellClick` event.
-
-|   Argument Name      |   Description                                                                                       |
-|----------------------| ----------------------------------------------------------------------------------------------------|
-|   cellElement        |   It represents the current cell element on which click is performed.                               |
-|   event              |   It represents the pointer event for the click action.                                             |
-|   x                  |   It represents the current x position of the mouse.                                                |
-|   y                  |   It represents the current y position of the mouse.                                                |
-|   heatmap            |   It represents the instance of the HeatMap and allows you to access its properties and methods.    |
-|   name               |   It represents the name of the event.                                                              |
-|   value              |   It represents the value of the currently clicked cell.                                            |
-|   xLabel             |   It represents the x-axis label of the currently clicked cell.                                     |
-|   xValue             |   It represents the x-axis value of the currently clicked cell.                                     |
-|   yLabel             |   It represents the y-axis label of the currently clicked cell.                                     |
-|   yValue             |   It represents the y-axis value of the currently clicked cell.                                     |
+The `cellClick` event will be triggered when clicking on the HeatMap cell. To know more about the arguments of this event, refer [here](../api/heatmap/iCellClickEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -60,21 +46,7 @@ The `cellClick` event will be triggered when clicking on the HeatMap cell. The f
 
 ## cellDoubleClick
 
-The `cellDoubleClick` event will be triggered when clicking on the HeatMap cell. The following properties are available in the event argument of the `cellDoubleClick` event.
-
-|   Argument Name      |   Description                                                                                       |
-|----------------------| ----------------------------------------------------------------------------------------------------|
-|   cellElement        |   It represents the current cell element on which click is performed.                               |
-|   event              |   It represents the pointer event for the click action.                                             |
-|   x                  |   It represents the current x position of the mouse.                                                |
-|   y                  |   It represents the current y position of the mouse.                                                |
-|   heatmap            |   It represents the instance of the HeatMap and allows you to access its properties and methods.    |
-|   name               |   It represents the name of the event.                                                              |
-|   value              |   It represents the value of the currently clicked cell.                                            |
-|   xLabel             |   It represents the x-axis label of the currently clicked cell.                                     |
-|   xValue             |   It represents the x-axis value of the currently clicked cell.                                     |
-|   yLabel             |   It represents the y-axis label of the currently clicked cell.                                     |
-|   yValue             |   It represents the y-axis value of the currently clicked cell.                                     |
+The `cellDoubleClick` event will be triggered when clicking on the HeatMap cell. To know more about the arguments of this event, refer [here](../api/heatmap/iCellDoubleClickEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -105,20 +77,7 @@ The `cellDoubleClick` event will be triggered when clicking on the HeatMap cell.
 
 ## cellRender
 
-The `cellRender` event will be triggered before rendering of each HeatMap cell. The following properties are available in the event argument of the `cellRender` event.
-
-|   Argument Name      |   Description                                                                                       |
-|----------------------| ----------------------------------------------------------------------------------------------------|
-|   cancel             |   The event default action should be canceled or allowed to proceed.                                |
-|   cellColor          |   It represents the color of the currently rendered cell.                                           |
-|   displayText        |   It represents the label of the currently rendered cell.                                           |
-|   heatmap            |   It represents the instance of the HeatMap and allows you to access its properties and methods.    |
-|   name               |   It represents the name of the event.                                                              |
-|   value              |   It represents the value of the currently rendered cell.                                           |
-|   xLabel             |   It represents the x-axis label of the currently rendered cell.                                    |
-|   xValue             |   It represents the x-axis value of the currently rendered cell.                                    |
-|   yLabel             |   It represents the y-axis label of the currently rendered cell.                                    |
-|   yValue             |   It represents the y-axis value of the currently rendered cell.                                    |
+The `cellRender` event will be triggered before rendering of each HeatMap cell. To know more about the arguments of this event, refer [here](../api/heatmap/iCellEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -148,14 +107,7 @@ The `cellRender` event will be triggered before rendering of each HeatMap cell. 
 
 ## cellSelected
 
-The `cellSelected` event is triggered when a cell is selected in the HeatMap. The following properties are available in the event argument of the `cellSelected` event.
-
-|   Argument Name      |   Description                                                                                       |
-|----------------------| ----------------------------------------------------------------------------------------------------|
-|   cancel             |   The event default action should be canceled or allowed to proceed.                                |
-|   data               |   It represents the details of the selected cells.                                                  |
-|   heatmap            |   It represents the instance of the HeatMap and allows you to access its properties and methods.    |
-|   name               |   It represents the name of the event.                                                              |
+The `cellSelected` event is triggered when a cell is selected in the HeatMap. To know more about the arguments of this event, refer [here](../api/heatmap/iSelectedEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -191,13 +143,7 @@ The `created` event is triggered after HeatMap is completely rendered.
 
 ## legendRender
 
-The `legendRender` event is triggered before the legend is rendered. The following properties are available in the event argument of the `legendRender` event.
-
-|   Argument Name      |   Description                                                                                       |
-|----------------------| ----------------------------------------------------------------------------------------------------|
-|   cancel             |   The event default action should be canceled or allowed to proceed.                                |
-|   name               |   It represents the name of the event.                                                              |
-|   text               |   It represents the legend text of the legend item that is currently rendered.                      |
+The `legendRender` event is triggered before the legend is rendered. To know more about the arguments of this event, refer [here](../api/heatmap/iLegendRenderEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -227,12 +173,7 @@ The `legendRender` event is triggered before the legend is rendered. The followi
 
 ## load
 
-The `load` event is triggered before HeatMap gets loaded. The following properties are available in the event argument of the `load` event.
-
-|   Argument Name      |   Description                                                                                       |
-|----------------------| ----------------------------------------------------------------------------------------------------|
-|   heatmap            |   It represents the instance about the HeatMap and allows you to access its properties and methods. |
-|   name               |   It represents the name of the event                                                               |
+The `load` event is triggered before HeatMap gets loaded. To know more about the arguments of this event, refer [here](../api/heatmap/iLoadedEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -262,12 +203,7 @@ The `load` event is triggered before HeatMap gets loaded. The following properti
 
 ## loaded
 
-The `loaded` event is triggered after HeatMap is loaded. The following properties are available in the event argument of the `loaded` event.
-
-|   Argument Name      |   Description                                                                                       |
-|----------------------| ----------------------------------------------------------------------------------------------------|
-|   heatmap            |   It represents the instance of the HeatMap and allows you to access its properties and methods.    |
-|   name               |   It represents the name of the event.                                                              |
+The `loaded` event is triggered after HeatMap is loaded. To know more about the arguments of this event, refer [here](../api/heatmap/iLoadedEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -297,15 +233,7 @@ The `loaded` event is triggered after HeatMap is loaded. The following propertie
 
 ## resized
 
-The `resized` event is triggered to notify the resize of the HeatMap when the window is resized. The following properties are available in the event argument of the `resized` event.
-
-|   Argument Name      |   Description                                                                                       |
-|----------------------| ----------------------------------------------------------------------------------------------------|
-|    cancel            | The event default action should be canceled or allowed to proceed.                                  |
-|    currentSize       | It represents the size of the HeatMap before it gets resized.                                       |
-|    previousSize      | It represents the size of the HeatMap after it gets resized.                                        |
-|    heatmap           | It represents the instance of the HeatMap and allows you to access its properties and methods.      |
-|    name              | It represents the name of the event.                                                                |
+The `resized` event is triggered to notify the resize of the HeatMap when the window is resized. To know more about the arguments of this event, refer [here](../api/heatmap/iResizeEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -335,19 +263,7 @@ The `resized` event is triggered to notify the resize of the HeatMap when the wi
 
 ## tooltipRender
 
-The `tooltipRender` event is triggered before the tooltip of the HeatMap is rendered on the HeatMap cell. The following properties are available in the event argument of the `tooltipRender` event.
-
-|   Argument Name      |   Description                                                                                       |
-|----------------------| ----------------------------------------------------------------------------------------------------|
-|    cancel            |  The event default action should be canceled or allowed to proceed.                                 |
-|    content           |  It represents the content of the tooltip.                                                          |
-|    value             |  It represents the value of the cell on which the tooltip currently rendered.                       |
-|    heatmap           |  It represents the instance of the HeatMap and allows you to access its properties and methods.     |
-|    name              |  It represents the name of the event.                                                               |
-|    xLabel            |  It represents the x-axis label on which the tooltip currently rendered.                            |
-|    xValue            |  It represents the x-axis value on which the tooltip currently rendered.                            |
-|    yLabel            |  It represents the y-axis label on which the tooltip currently rendered.                            |
-|    yValue            |  It represents the y-axis value on which the tooltip currently rendered.                            |
+The `tooltipRender` event is triggered before the tooltip of the HeatMap is rendered on the HeatMap cell. To know more about the arguments of this event, refer [here](../api/heatmap/iTooltipEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 
