@@ -19,8 +19,8 @@ let heatmapData: any [] = [
     [74, 33, 88, 23, 86, 59]];
 
 let heatmap: HeatMap = new HeatMap({
-    cellSelected: function(args) {
-        console.log('cell selected event triggered!!!', args);
+    created: function(args) {
+        console.log('created render event is triggered!!!');
     },
      titleSettings: {
              text: 'Sales Revenue per Employee (in 1000 US$)',
@@ -38,7 +38,6 @@ let heatmap: HeatMap = new HeatMap({
      yAxis: {
          labels: ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
      },
-     allowSelection: true,
      dataSource: heatmapData,
 });
 heatmap.appendTo('#element');

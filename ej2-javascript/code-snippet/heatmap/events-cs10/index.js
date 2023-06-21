@@ -13,8 +13,8 @@ var heatmapData = [
      [74, 33, 88, 23, 86, 59]];
 
 var heatmap = new ej.heatmap.HeatMap({
-    cellSelected: function(args) {
-       console.log('cell selected event triggered!!!', args);
+    created: function(args) {
+       console.log('created event triggered!!!');
     },
     titleSettings: {
             text: 'Sales Revenue per Employee (in 1000 US$)',
@@ -32,7 +32,6 @@ var heatmap = new ej.heatmap.HeatMap({
     yAxis: {
         labels: ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
     },
-    allowSelection: true,
     dataSource: heatmapData, 
 });
 heatmap.appendTo('#element');

@@ -139,6 +139,32 @@ When a cell in the HeatMap is selected, the [cellSelected](../api/heatmap/cellse
 
 After HeatMap has been completely rendered, the [created](../api/heatmap/#created) event is triggered.
 
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/heatmap/events-cs10/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/events-cs10/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/heatmap/events-cs10" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/heatmap/events-cs10/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/events-cs10/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/heatmap/events-cs10" %}
+
 ## legendRender
 
 The [legendRender](../api/heatmap/legendrender/) event is triggered before the legend is rendered. To know more about the arguments of this event, refer [here](../api/heatmap/iLegendRenderEventArgs/).
