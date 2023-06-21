@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Axis in ##Platform_Name## Heatmap chart control | Syncfusion
-description: Learn here all about Axis in Syncfusion ##Platform_Name## Heatmap chart control of Syncfusion Essential JS 2 and more.
+title: Axis in ##Platform_Name## HeatMap chart control | Syncfusion
+description: Learn here all about Axis in Syncfusion ##Platform_Name## HeatMap chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Axis 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Axis in ##Platform_Name## Heatmap chart control
+# Axis in ##Platform_Name## HeatMap chart control
 
 HeatMap consists of two axes namely, X-axis and Y-axis that displays the row headers and column headers to plot the data points respectively.
 You can define the type, format, and other customizing options for both axes in the HeatMap.
@@ -206,14 +206,14 @@ HeatMap supports formatting the axis labels by using the [labelFormat](../api/he
 
 ## Axis labels customization
 
-### LabelIntersectAction
+### Customizing the labels when intersecting with other labels
 
-The HeatMap component provides an option to handle the axis labels when the labels intersects with each other by using the [labelIntersectAction](../api/heatmap/axisModel/#labelintersectaction) property. The following options are available in the `labelIntersectAction` property.
+When the axis labels intersect, [labelIntersectAction](../api/heatmap/axisModel/#labelintersectaction) property is used to handle the intersection. The `labelIntersectAction` property can take the following values.
 
-* None - It specifies that no action is taken, when the axis labels intersect.
-* Trim - It specifies to trim the axis labels when they intersect.
-* Rotate45 - It specifies to rotate the axis labels when they intersect.
-* MultipleRows - It specifies to show all the axis labels as multiple rows when they intersect.
+* **None** - It specifies that no action is taken, when the axis labels intersect.
+* **Trim** - It specifies to trim the axis labels when they intersect.
+* **Rotate45** - When the axis labels intersect, they are rotated to 45 degrees.
+* **MultipleRows** - It specifies to show all the axis labels as multiple rows when they intersect.
 
 The below example demonstrates to trim the axis labels by using the `labelIntersectAction` property.
 
@@ -244,9 +244,9 @@ The below example demonstrates to trim the axis labels by using the `labelInters
 {% previewsample "page.domainurl/code-snippet/heatmap/axis-cs11" %}
 {% endif %}
 
-### LabelRotation
+### Rotating the labels
 
-The HeatMap component provides an option to set the angle to rotate the text for the axis labels by using [labelRotation](../api/heatmap/axisModel/#labelrotation) property.
+The axis labels can be rotated to the desired angles by using the [labelRotation](../api/heatmap/axisModel/#labelrotation) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -275,17 +275,17 @@ The HeatMap component provides an option to set the angle to rotate the text for
 {% previewsample "page.domainurl/code-snippet/heatmap/axis-cs12" %}
 {% endif %}
 
-### TextStyle
+### Customizing the text style
 
-The HeatMap component provides an option to customize the text for the axis labels by using the following properties.
+The text style of the axis labels can be customized using the following properties.
 
-* [color](../api/heatmap/fontModel/#color) - It is used to customize the color of the text for the axis labels.
-* [fontFamily](../api/heatmap/fontModel/#fontfamily) - It is used to customize the font family of the text for the axis labels.
-* [fontStyle](../api/heatmap/fontModel/#fontstyle) - It is used to customize the font style of the text for the axis labels.
-* [fontWeight](../api/heatmap/fontModel/#fontweight) - It is used to customize the font weight of the text for the axis labels.
-* [size](../api/heatmap/fontModel/#size) - It is used to customize the size of the text for the axis labels.
-* [textAlignment](../api/heatmap/fontModel/#textalignment) - It is used to place and align the axis labels.
-* [textOverflow](../api/heatmap/fontModel/#textoverflow) - It is used to trim or wrap the axis labels when the label overflows the intended space.
+* [color](../api/heatmap/fontModel/#color) - It is used to change the text color for the axis labels.
+* [fontFamily](../api/heatmap/fontModel/#fontfamily) - It is used to change the font family used for the axis labels.
+* [fontStyle](../api/heatmap/fontModel/#fontstyle) - It is used to change the font style of the axis labels.
+* [fontWeight](../api/heatmap/fontModel/#fontweight) - It is used to change the font weight of the axis labels.
+* [size](../api/heatmap/fontModel/#size) - It is used to change the font size for the axis labels.
+* [textAlignment](../api/heatmap/fontModel/#textalignment) - It is used to position and align axis labels. This property allows you to specify values such as **Near**, **Centre**, and **Far**.
+* [textOverflow](../api/heatmap/fontModel/#textoverflow) - When the axis label exceeds the intended space, this property is used to trim or wrap it. This property takes values such as **None**, **Trim**, and **Wrap**.
 
 {% if page.publishingplatform == "typescript" %}
 

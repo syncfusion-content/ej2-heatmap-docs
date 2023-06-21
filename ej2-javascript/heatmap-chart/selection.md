@@ -13,13 +13,13 @@ domainurl: ##DomainURL##
 
 In the HeatMap, the cell selection is used to select the single or multiple HeatMap cells at runtime and get the selected cell details using the [cellSelected](../api/heatmap/#cellselected) event. You can enable the cell selection using the [allowSelection](../api/heatmap/#allowselection) property.
 
-To select multiple cells using different modes of interactions as shown in the below table.
+The HeatMap cells can be selected using the following interactions, as shown in the table below.
 
 |   Modes of Interactions |   Description                                                                                                      |
 |------------------------ | -------------------------------------------------------------------------------------------------------------------|
-|   Mouse                 |  To select multiple cells, click and drag the mouse across the specific cells.                                     |
-|   Touch                 |  To select multiple cells, touch and drag the fingers across the specific cells.                                   |
-|   Keyboard              |  To select multiple cells, holding the Ctrl (Control) key on your keyboard and click on any other specific cells.  |
+|   Mouse                 |  HeatMap cells can be selected with a click or by dragging and dropping.                                           |
+|   Touch                 |  HeatMap cells can be selected by tapping or dragging and dropping.                                                |
+|   Keyboard              |  The Ctrl key on the keyboard can be used to enable multiple cell selection with mouse and touch interaction. The Ctrl key can only be used if the `EnableMultiSelect` property is set to **true** in order to enable multiple cell selection.                                                                                                                                     |
 
 {% if page.publishingplatform == "typescript" %}
 
