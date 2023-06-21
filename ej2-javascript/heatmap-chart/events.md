@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Events in ##Platform_Name## HeatMap chart control
 
-This section describes the HeatMap chart control event that gets triggered when corresponding operations are performed.
+This section describes the HeatMap chart control event, which occurs when the required actions are performed.
 
 ## cellClick
 

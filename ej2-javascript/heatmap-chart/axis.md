@@ -206,6 +206,45 @@ HeatMap supports formatting the axis labels by using the [labelFormat](../api/he
 
 ## Axis labels customization
 
+### Customizing the text style
+
+The text style of the axis labels can be customized using the following properties.
+
+* [color](../api/heatmap/fontModel/#color) - It is used to change the text color for the axis labels.
+* [fontFamily](../api/heatmap/fontModel/#fontfamily) - It is used to change the font family used for the axis labels.
+* [fontStyle](../api/heatmap/fontModel/#fontstyle) - It is used to change the font style of the axis labels.
+* [fontWeight](../api/heatmap/fontModel/#fontweight) - It is used to change the font weight of the axis labels.
+* [size](../api/heatmap/fontModel/#size) - It is used to change the font size for the axis labels.
+* [textAlignment](../api/heatmap/fontModel/#textalignment) - It is used to position and align axis labels. This property allows you to specify values such as **Near**, **Centre**, and **Far**.
+* [textOverflow](../api/heatmap/fontModel/#textoverflow) - When the axis label exceeds the intended space, this property is used to trim or wrap it. This property takes values such as **None**, **Trim**, and **Wrap**.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/heatmap/axis-cs13/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/axis-cs13/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs13" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/heatmap/axis-cs13/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/axis-cs13/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs13" %}
+{% endif %}
+
 ### Customizing the labels when intersecting with other labels
 
 When the axis labels intersect, [labelIntersectAction](../api/heatmap/axisModel/#labelintersectaction) property is used to handle the intersection. The `labelIntersectAction` property can take the following values.
@@ -273,45 +312,6 @@ The axis labels can be rotated to the desired angles by using the [labelRotation
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/heatmap/axis-cs12" %}
-{% endif %}
-
-### Customizing the text style
-
-The text style of the axis labels can be customized using the following properties.
-
-* [color](../api/heatmap/fontModel/#color) - It is used to change the text color for the axis labels.
-* [fontFamily](../api/heatmap/fontModel/#fontfamily) - It is used to change the font family used for the axis labels.
-* [fontStyle](../api/heatmap/fontModel/#fontstyle) - It is used to change the font style of the axis labels.
-* [fontWeight](../api/heatmap/fontModel/#fontweight) - It is used to change the font weight of the axis labels.
-* [size](../api/heatmap/fontModel/#size) - It is used to change the font size for the axis labels.
-* [textAlignment](../api/heatmap/fontModel/#textalignment) - It is used to position and align axis labels. This property allows you to specify values such as **Near**, **Centre**, and **Far**.
-* [textOverflow](../api/heatmap/fontModel/#textoverflow) - When the axis label exceeds the intended space, this property is used to trim or wrap it. This property takes values such as **None**, **Trim**, and **Wrap**.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/heatmap/axis-cs13/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/heatmap/axis-cs13/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs13" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/heatmap/axis-cs13/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/heatmap/axis-cs13/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs13" %}
 {% endif %}
 
 ## Axis intervals
