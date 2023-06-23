@@ -78,3 +78,34 @@ In the HeatMap, the [enableMultiSelect](../api/heatmap/#enablemultiselect) prope
 
 {% previewsample "page.domainurl/code-snippet/heatmap/selection-cs2" %}
 {% endif %}
+
+### Clearing cell selection
+
+The [clearSelection](../api/heatmap#clearselection) method can be used to clear all the selected cells. The below example illustrates the same.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/heatmap/selection-cs3/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/selection-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/heatmap/selection-cs3" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/heatmap/selection-cs3/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/selection-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/heatmap/selection-cs3" %}
+{% endif %}
