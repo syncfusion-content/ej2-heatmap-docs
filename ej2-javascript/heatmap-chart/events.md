@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in ##Platform_Name## HeatMap chart control | Syncfusion
-description: Learn here all about Events in Syncfusion ##Platform_Name## HeatMap chart control of Syncfusion Essential JS 2 and more.
+description: Learn here all about events in Syncfusion ##Platform_Name## HeatMap chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Events 
 publishingplatform: ##Platform_Name##
@@ -15,7 +15,7 @@ This section describes the HeatMap chart control event, which occurs when the re
 
 ## cellClick
 
-When you click on a HeatMap cell, the [cellClick](../api/heatmap/cellclick/) event is triggered. To know more about the arguments of this event, refer [here](../api/heatmap/iCellClickEventArgs/).
+When you click on a HeatMap cell, the [cellClick](../api/heatmap/cellclick/) event is triggered. To know more about arguments of this event, refer [here](../api/heatmap/iCellClickEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,7 +46,7 @@ When you click on a HeatMap cell, the [cellClick](../api/heatmap/cellclick/) eve
 
 ## cellDoubleClick
 
-When a double click is done on a HeatMap cell, the [cellDoubleClick](../api/heatmap/celldoubleclick/) event is triggered. To know more about the arguments of this event, refer [here](../api/heatmap/iCellDoubleClickEventArgs/).
+When you double click on a HeatMap cell, the [cellDoubleClick](../api/heatmap/celldoubleclick/) event is triggered. To know more about arguments of this event, refer [here](../api/heatmap/iCellDoubleClickEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -77,7 +77,7 @@ When a double click is done on a HeatMap cell, the [cellDoubleClick](../api/heat
 
 ## cellRender
 
-The [cellRender](../api/heatmap/cellrender/) event will be triggered before each HeatMap cell is rendered. To know more about the arguments of this event, refer [here](../api/heatmap/iCellEventArgs/).
+The [cellRender](../api/heatmap/cellrender/) event will be triggered before each HeatMap cell is rendered. To know more about arguments of this event, refer [here](../api/heatmap/iCellEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -107,7 +107,7 @@ The [cellRender](../api/heatmap/cellrender/) event will be triggered before each
 
 ## cellSelected
 
-When a cell in the HeatMap is selected, the [cellSelected](../api/heatmap/cellselected/) event is triggered. To know more about the arguments of this event, refer [here](../api/heatmap/iSelectedEventArgs/).
+When single or multiple cells in the HeatMap are selected, the [cellSelected](../api/heatmap/cellselected/) event is triggered. To know more about arguments of this event, refer [here](../api/heatmap/iSelectedEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -137,7 +137,7 @@ When a cell in the HeatMap is selected, the [cellSelected](../api/heatmap/cellse
 
 ## created
 
-After HeatMap has been completely rendered, the [created](../api/heatmap/#created) event is triggered.
+Once HeatMap has been completely rendered, the [created](../api/heatmap/#created) event is triggered.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -167,7 +167,7 @@ After HeatMap has been completely rendered, the [created](../api/heatmap/#create
 
 ## legendRender
 
-The [legendRender](../api/heatmap/legendrender/) event is triggered before the legend is rendered. To know more about the arguments of this event, refer [here](../api/heatmap/iLegendRenderEventArgs/).
+The [legendRender](../api/heatmap/legendrender/) event is triggered before the legend is rendered. To know more about arguments of this event, refer [here](../api/heatmap/iLegendRenderEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -197,7 +197,7 @@ The [legendRender](../api/heatmap/legendrender/) event is triggered before the l
 
 ## load
 
-The [load](../api/heatmap/load/) event is triggered before the HeatMap gets rendered. To know more about the arguments of this event, refer [here](../api/heatmap/iLoadedEventArgs/).
+The [load](../api/heatmap/load/) event is triggered before the HeatMap is rendered. To know more about arguments of this event, refer [here](../api/heatmap/iLoadedEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -227,7 +227,7 @@ The [load](../api/heatmap/load/) event is triggered before the HeatMap gets rend
 
 ## loaded
 
-After HeatMap is loaded, the [loaded](../api/heatmap/loaded/) event is triggered. To know more about the arguments of this event, refer [here](../api/heatmap/iLoadedEventArgs/).
+Once HeatMap is loaded, the [loaded](../api/heatmap/loaded/) event is triggered. To know more about arguments of this event, refer [here](../api/heatmap/iLoadedEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -257,7 +257,7 @@ After HeatMap is loaded, the [loaded](../api/heatmap/loaded/) event is triggered
 
 ## resized
 
-When the window is resized, the [resized](../api/heatmap/resized/) event is triggered to notify the resize of the HeatMap. To know more about the arguments of this event, refer [here](../api/heatmap/iResizeEventArgs/).
+When the window is resized, the [resized](../api/heatmap/resized/) event is triggered to notify the resize of the HeatMap. To know more about arguments of this event, refer [here](../api/heatmap/iResizeEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -287,7 +287,7 @@ When the window is resized, the [resized](../api/heatmap/resized/) event is trig
 
 ## tooltipRender
 
-The [tooltipRender](../api/heatmap/tooltiprender/) event is triggered before the tooltip is rendered on the HeatMap cell. To know more about the arguments of this event, refer [here](../api/heatmap/iTooltipEventArgs/).
+The [tooltipRender](../api/heatmap/tooltiprender/) event is triggered before the tooltip is rendered on the HeatMap cell. To know more about arguments of this event, refer [here](../api/heatmap/iTooltipEventArgs/).
 
 {% if page.publishingplatform == "typescript" %}
 
