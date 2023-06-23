@@ -245,7 +245,7 @@ The text style of the axis labels can be customized using the following properti
 {% previewsample "page.domainurl/code-snippet/heatmap/axis-cs13" %}
 {% endif %}
 
-### Customizing the labels when intersecting with other labels
+### Customizing labels when intersecting with other labels
 
 When the axis labels intersect, [labelIntersectAction](../api/heatmap/axisModel/#labelintersectaction) property is used to handle the intersection. The `labelIntersectAction` property can take the following values.
 
@@ -283,7 +283,7 @@ The below example demonstrates to trim the axis labels by using the `labelInters
 {% previewsample "page.domainurl/code-snippet/heatmap/axis-cs11" %}
 {% endif %}
 
-### Rotating the labels
+### Rotating labels
 
 The axis labels can be rotated to the desired angles by using the [labelRotation](../api/heatmap/axisModel/#labelrotation) property.
 
