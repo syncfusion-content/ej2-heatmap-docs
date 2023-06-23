@@ -173,37 +173,6 @@ In HeatMap, you can place the axis label in an opposite position of its default 
 {% previewsample "page.domainurl/code-snippet/heatmap/axis-cs5" %}
 {% endif %}
 
-## Label formatting
-
-HeatMap supports formatting the axis labels by using the [labelFormat](../api/heatmap/axis/#labelformat) property. Using this property, you can customize the axis label by global string format ('P', 'C', etc) or customized format like '{value}°C'.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/heatmap/axis-cs6/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/heatmap/axis-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs6" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/heatmap/axis-cs6/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/heatmap/axis-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs6" %}
-{% endif %}
-
 ## Axis labels customization
 
 ### Customizing the text style
@@ -312,6 +281,37 @@ The axis labels can be rotated to the desired angles by using the [labelRotation
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/heatmap/axis-cs12" %}
+{% endif %}
+
+### Label formatting
+
+HeatMap supports formatting the axis labels by using the [labelFormat](../api/heatmap/axis/#labelformat) property. Using this property, you can customize the axis label by global string format ('P', 'C', etc) or customized format like '{value}°C'.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/heatmap/axis-cs6/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/axis-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs6" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/heatmap/axis-cs6/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/axis-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs6" %}
 {% endif %}
 
 ## Axis intervals
