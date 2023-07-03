@@ -29,7 +29,7 @@ let heatmapData: any [] = [
         },
       },
       xAxis: {
-        enableTrim:'Trim',
+        enableTrim:'true',
         labelIntersectAction:'Trim',
         opposedPosition: true,
         labels: [
