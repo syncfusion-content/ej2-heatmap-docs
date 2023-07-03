@@ -47,7 +47,7 @@ let heatmapData: any [] = [
         ],
       },
       yAxis: {
-        enableTrim:'Trim',
+        enableTrim:'true',
 		labelIntersectAction:'Trim',
         labels: [
           'Ace Apparels',
