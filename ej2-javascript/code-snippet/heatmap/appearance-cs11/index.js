@@ -43,7 +43,7 @@ var heatmap = new ej.heatmap.HeatMap({
     },
     cellSettings: {
         labelTemplate:
-            '<div style="width:20px;height:20px;padding: 2px;background-color:#3498db; border: 1px solid #000000; border-radius:50%">${value}<div>',
+            '<div style="width:20px;height:20px;padding: 2px;background-color:#3498db; border: 1px solid #000000; border-radius:50%">${value}</div>',
     },
     dataSource: heatmapData
 });
