@@ -214,7 +214,7 @@ The text style of the axis labels can be customized using the following options 
 {% previewsample "page.domainurl/code-snippet/heatmap/axis-cs13" %}
 {% endif %}
 
-## Axis labels with line breaks
+### Axis labels with line breaks
 
 Axis labels with line breaks are used to improve the readability of the HeatMap by breaking the text labels on an axis into multiple lines.
 
