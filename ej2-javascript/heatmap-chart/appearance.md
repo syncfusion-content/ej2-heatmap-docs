@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in ##Platform_Name## Heatmap chart control | Syncfusion
-description: Learn here all about Appearance in Syncfusion ##Platform_Name## Heatmap chart control of Syncfusion Essential JS 2 and more.
+title: Appearance in ##Platform_Name## HeatMap chart control | Syncfusion
+description: Learn here all about Appearance in Syncfusion ##Platform_Name## HeatMap chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Appearance 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appearance in ##Platform_Name## Heatmap chart control
+# Appearance in ##Platform_Name## HeatMap chart control
 
 ## Cell customization
 
@@ -149,7 +149,7 @@ The background color of the HeatMap can be customized using the [backgroundColor
 
 ## Margin
 
-Set the margin for the heatmap from its container by using the [margin](../api/heatmap/#margin) property.
+Set the margin for the HeatMap from its container by using the [margin](../api/heatmap/#margin) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -180,7 +180,7 @@ Set the margin for the heatmap from its container by using the [margin](../api/h
 
 ## Title
 
-The title is used to provide a quick information about the data plotted in heatmap. The [text](../api/heatmap/title/#text) property is used to set the title for the heatmap. The text style of the title can be customized by using the [textStyle](../api/heatmap/title/#textstyle) property.
+The title is used to provide a quick information about the data plotted in HeatMap. The [text](../api/heatmap/title/#text) property is used to set the title for the HeatMap. The text style of the title can be customized by using the [textStyle](../api/heatmap/title/#textstyle) property.
 
 {% if page.publishingplatform == "typescript" %}
 
