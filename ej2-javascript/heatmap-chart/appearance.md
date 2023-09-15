@@ -333,6 +333,39 @@ The format of the data label, such as currency, decimal, percent etc. can be cha
 {% previewsample "page.domainurl/code-snippet/heatmap/appearance-cs10" %}
 {% endif %}
 
+## Adding data label as a template
+
+Any HTML elements can be added as a template in the data labels by using the [labelTemplate](../api/heatmap/cellSettings/#labeltemplate) property of [cellSettings](../api/heatmap/cellSettings) in the HeatMap.
+
+>Note: The properties of data label such as `textStyle` properties are not applicable to template property. The styles can be applied to the label template using the CSS styles of the HTML element.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/heatmap/appearance-cs11/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/appearance-cs11/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/heatmap/appearance-cs11" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/heatmap/appearance-cs11/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/appearance-cs11/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/heatmap/appearance-cs11" %}
+{% endif %}
+
 ## See Also
 
 * [To customize the appearance of tool tip](./tooltip/#customize-the-appearance-of-tooltip)

@@ -458,3 +458,35 @@ The multilevel labels can be customized by using the following properties.
 
 {% previewsample "page.domainurl/code-snippet/heatmap/axis-cs10" %}
 {% endif %}
+
+## Axis labels with line breaks
+
+Axis labels with line breaks are used to improve the readability of the HeatMap by breaking the text labels on an axis into multiple lines.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/heatmap/axis-cs14/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/axis-cs14/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs14" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/heatmap/axis-cs14/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/axis-cs14/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/heatmap/axis-cs14" %}
+{% endif %}
+
