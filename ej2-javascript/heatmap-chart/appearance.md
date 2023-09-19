@@ -473,8 +473,6 @@ The following example illustrates how to add a template in the data label using 
 
 >Note: The properties of data label such as `textStyle` properties are not applicable to template property. The styles can be applied to the label template using the CSS styles of the HTML element.
 
-
-
 ## See Also
 
 * [To customize the appearance of tool tip](./tooltip/#customize-the-appearance-of-tooltip)
