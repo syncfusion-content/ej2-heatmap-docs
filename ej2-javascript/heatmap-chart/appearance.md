@@ -343,7 +343,7 @@ The following examples demonstrate different data binding with the `labelTemplat
 
 When an array of numbers is specified as the data source, you can add a template in the data label by using the `labelTemplate` property, and its value should be set as **${value}**. This allows the cell value to be displayed as the template for the labels.
 
-Table
+**Table**
 
 The following example illustrates how to add a template in the data label using array table binding.
 
@@ -374,7 +374,7 @@ The following example illustrates how to add a template in the data label using 
 {% previewsample "page.domainurl/code-snippet/heatmap/appearance-cs11" %}
 {% endif %}
 
-Cell
+**Cell**
 
 The following example illustrates how to add a template in the data label using array cell binding.
 
@@ -405,11 +405,11 @@ The following example illustrates how to add a template in the data label using 
 {% previewsample "page.domainurl/code-snippet/heatmap/appearance-cs12" %}
 {% endif %}
 
-JSON binding
+### JSON binding
 
 When a list of JSON objects are specified as data source, you can add a template in the data label by using the `labelTemplate` property, and its value should be bound to the field value from the data source. This allows the specified feild value to be displayed as the template for the labels.
 
-Table
+**Table**
 
 The following example illustrates how to add a template in the data label using JSON table binding.
 
@@ -440,7 +440,7 @@ The following example illustrates how to add a template in the data label using 
 {% previewsample "page.domainurl/code-snippet/heatmap/appearance-cs13" %}
 {% endif %}
 
-Cell
+**Cell**
 
 The following example illustrates how to add a template in the data label using JSON cell binding.
 
