@@ -337,7 +337,15 @@ The format of the data label, such as currency, decimal, percent etc. can be cha
 
 Any HTML elements can be added as a template in the data labels by using the [labelTemplate](../api/heatmap/cellSettings/#labeltemplate) property of [cellSettings](../api/heatmap/cellSettings) in the HeatMap.
 
->Note: The properties of data label such as `textStyle` properties are not applicable to template property. The styles can be applied to the label template using the CSS styles of the HTML element.
+The following examples demonstrate different data binding with the `labelTemplate` property in the HeatMap.
+
+### Array binding
+
+When an array of numbers is specified as the data source, you can add a template in the data label by using the `labelTemplate` property, and its value should be set as **${value}**. This allows the cell value to be displayed as the template for the labels.
+
+Table
+
+The following example illustrates how to add a template in the data label using array table binding.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -365,6 +373,107 @@ Any HTML elements can be added as a template in the data labels by using the [la
 
 {% previewsample "page.domainurl/code-snippet/heatmap/appearance-cs11" %}
 {% endif %}
+
+Cell
+
+The following example illustrates how to add a template in the data label using array cell binding.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/heatmap/appearance-cs12/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/appearance-cs12/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/heatmap/appearance-cs12" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/heatmap/appearance-cs12/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/appearance-cs12/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/heatmap/appearance-cs12" %}
+{% endif %}
+
+JSON binding
+
+When a list of JSON objects are specified as data source, you can add a template in the data label by using the `labelTemplate` property, and its value should be bound to the field value from the data source. This allows the specified feild value to be displayed as the template for the labels.
+
+Table
+
+The following example illustrates how to add a template in the data label using JSON table binding.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/heatmap/appearance-cs13/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/appearance-cs13/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/heatmap/appearance-cs13" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/heatmap/appearance-cs13/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/appearance-cs13/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/heatmap/appearance-cs13" %}
+{% endif %}
+
+Cell
+
+The following example illustrates how to add a template in the data label using JSON cell binding.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/heatmap/appearance-cs14/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/appearance-cs14/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/heatmap/appearance-cs14" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/heatmap/appearance-cs14/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/heatmap/appearance-cs14/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/heatmap/appearance-cs14" %}
+{% endif %}
+
+>Note: The properties of data label such as `textStyle` properties are not applicable to template property. The styles can be applied to the label template using the CSS styles of the HTML element.
+
+
 
 ## See Also
 

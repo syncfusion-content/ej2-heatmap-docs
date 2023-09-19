@@ -1,7 +1,7 @@
 var heatmapData = [
-    [[4, 39], [3, 8], [1, 3], [1, 10], [4, 4], [2, 15]],
-    [[4, 28], [5, 92], [5, 73], [3, 1], [3, 4], [4, 126]],
-    [[4, 45], [5, 152], [0, 44], [4, 54], [5, 243], [2, 45]]];
+    [0, 0, [4, 39]], [0, 1, [3, 8]], [0, 2, [1, 3]], [0, 3, [1, 10]], [0, 4, [4, 4]], [0, 5, [2, 15]],
+    [1, 0, [4, 28]], [1, 1, [5, 92]], [1, 2, [5, 73]], [1, 3, [3, 1]], [1, 4, [3, 4]], [1, 5, [4, 126]],
+    [2, 0, [4, 45]], [2, 1, [5, 152]], [2, 2, [0, 44]], [2, 3, [4, 54]], [2, 4, [5, 243]], [2, 5, [2, 45]]];
 
 var heatmap = new ej.heatmap.HeatMap({
     titleSettings: {
@@ -21,7 +21,11 @@ var heatmap = new ej.heatmap.HeatMap({
     },
     cellSettings: {
         labelTemplate:
-            '<div style="width:20px;height:20px;padding-left: 4px;background-color:#3498db; border: 1px solid #000000; border-radius:50%">${value}</div>',
+            '<div style="width:20px;height:20px;padding-left: 5px;background-color:#3498db; border: 1px solid #000000; border-radius:50%">${value}</div>',
+    },
+    dataSourceSettings: {
+        isJsonData: false,
+        adaptorType: 'Cell'
     },
     dataSource: heatmapData
 });

@@ -5,23 +5,13 @@ import { HeatMap, Tooltip, Legend } from '@syncfusion/ej2-heatmap';
 HeatMap.Inject(Tooltip, Legend);
 
 let heatmapData: any[] = [
-    [73, 39, 26, 39, 94, 0],
-    [93, 58, 53, 38, 26, 68],
-    [99, 28, 22, 4, 66, 90],
-    [14, 26, 97, 69, 69, 3],
-    [7, 46, 47, 47, 88, 6],
-    [41, 55, 73, 23, 3, 79],
-    [56, 69, 21, 86, 3, 33],
-    [45, 7, 53, 81, 95, 79],
-    [60, 77, 74, 68, 88, 51],
-    [25, 25, 10, 12, 78, 14],
-    [25, 56, 55, 58, 12, 82],
-    [74, 33, 88, 23, 86, 59]
-];
+    [[4, 39], [3, 8], [1, 3], [1, 10], [4, 4], [2, 15]],
+    [[4, 28], [5, 92], [5, 73], [3, 1], [3, 4], [4, 126]],
+    [[4, 45], [5, 152], [0, 44], [4, 54], [5, 243], [2, 45]]];
 
 let heatmap: HeatMap = new HeatMap({
     titleSettings: {
-        text: 'Sales Revenue per Employee (in 1000 US$)',
+        text: 'Commercial Aviation Accidents and Fatalities by year 2012 - 2017',
         textStyle: {
             size: '15px',
             fontWeight: '500',
@@ -30,27 +20,14 @@ let heatmap: HeatMap = new HeatMap({
         },
     },
     xAxis: {
-        labels: [
-            'Nancy',
-            'Andrew',
-            'Janet',
-            'Margaret',
-            'Steven',
-            'Michael',
-            'Robert',
-            'Laura',
-            'Anne',
-            'Paul',
-            'Karin',
-            'Mario',
-        ]
+        labels: ['2017', '2016', '2015']
     },
     yAxis: {
-        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+        labels: ['Jan-Feb', 'Mar-Apr', 'May-Jun', 'Jul-Aug', 'Sep-Oct', 'Nov-Dec']
     },
     cellSettings: {
         labelTemplate:
-            '<div style="width:20px;height:20px;padding: 2px;background-color:#3498db; border: 1px solid #000000; border-radius:50%">${value}</div>',
+            '<div style="width:20px;height:20px;padding-left: 4px;background-color:#3498db; border: 1px solid #000000; border-radius:50%">${value}</div>',
     },
     dataSource: heatmapData
 });

@@ -1,7 +1,7 @@
 var heatmapData = [
-    [[4, 39], [3, 8], [1, 3], [1, 10], [4, 4], [2, 15]],
-    [[4, 28], [5, 92], [5, 73], [3, 1], [3, 4], [4, 126]],
-    [[4, 45], [5, 152], [0, 44], [4, 54], [5, 243], [2, 45]]];
+    { 'Year': '2017', 'Jan-Feb': [4, 39], 'Mar-Apr': [3, 8], 'May-Jun': [1, 3], 'Jul-Aug': [1, 10], 'Sep-Oct': [4, 4], 'Nov-Dec': [2, 15] },
+    { 'Year': '2016', 'Jan-Feb': [4, 28], 'Mar-Apr': [5, 92], 'May-Jun': [5, 73], 'Jul-Aug': [3, 1], 'Sep-Oct': [3, 4], 'Nov-Dec': [4, 126] },
+    { 'Year': '2015', 'Jan-Feb': [4, 45], 'Mar-Apr': [5, 152], 'May-Jun': [0, 44], 'Jul-Aug': [4, 54], 'Sep-Oct': [5, 243], 'Nov-Dec': [2, 45] }];
 
 var heatmap = new ej.heatmap.HeatMap({
     titleSettings: {
@@ -21,7 +21,12 @@ var heatmap = new ej.heatmap.HeatMap({
     },
     cellSettings: {
         labelTemplate:
-            '<div style="width:20px;height:20px;padding-left: 4px;background-color:#3498db; border: 1px solid #000000; border-radius:50%">${value}</div>',
+            '<div>Year - ${Year}</div>',
+    },
+    dataSourceSettings: {
+        isJsonData: true,
+        adaptorType: 'Table',
+        xDataMapping: 'Year',
     },
     dataSource: heatmapData
 });
