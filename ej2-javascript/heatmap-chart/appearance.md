@@ -333,19 +333,20 @@ The format of the data label, such as currency, decimal, percent etc. can be cha
 {% previewsample "page.domainurl/code-snippet/heatmap/appearance-cs10" %}
 {% endif %}
 
-## Adding data label as a template
+## Data label template
 
 Any HTML elements can be added as a template in the data labels by using the [labelTemplate](../api/heatmap/cellSettings/#labeltemplate) property of [cellSettings](../api/heatmap/cellSettings) in the HeatMap.
 
-The following examples demonstrate different data binding with the `labelTemplate` property in the HeatMap.
+The following examples show various data binding methods in the HeatMap using the `labelTemplate` property.
+
 
 ### Array binding
 
-When an array of numbers is specified as the data source, you can add a template in the data label by using the `labelTemplate` property, and its value should be set as **${value}**. This allows the cell value to be displayed as the template for the labels.
+By including `${value}` in the template content, the value from the data source for the corresponding cell can be displayed in the HeatMap cell as data label template content. Additionally, the x-axis and y-axis label values can be displayed by including `${xLabel}` and `${yLabel}` in the template content.
 
 **Table**
 
-The following example illustrates how to add a template in the data label using array table binding.
+The following example demonstrates how to add a data label template for array table binding.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -376,7 +377,7 @@ The following example illustrates how to add a template in the data label using 
 
 **Cell**
 
-The following example illustrates how to add a template in the data label using array cell binding.
+The following example demonstrates how to add a data label template for array cell binding.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -407,11 +408,11 @@ The following example illustrates how to add a template in the data label using 
 
 ### JSON binding
 
-When a list of JSON objects are specified as data source, you can add a template in the data label by using the `labelTemplate` property, and its value should be bound to the field value from the data source. This allows the specified feild value to be displayed as the template for the labels.
+By including the desired field name in the template content, such as **${value}**, the value from the data source for the corresponding cell can be displayed in the HeatMap cell as data label template content.
 
 **Table**
 
-The following example illustrates how to add a template in the data label using JSON table binding.
+The following example demonstrates how to add a data label template for JSON table binding.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -442,7 +443,7 @@ The following example illustrates how to add a template in the data label using 
 
 **Cell**
 
-The following example illustrates how to add a template in the data label using JSON cell binding.
+The following example demonstrates how to add a data label template for JSON cell binding.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -470,8 +471,6 @@ The following example illustrates how to add a template in the data label using 
 
 {% previewsample "page.domainurl/code-snippet/heatmap/appearance-cs14" %}
 {% endif %}
-
->Note: The properties of data label such as `textStyle` properties are not applicable to template property. The styles can be applied to the label template using the CSS styles of the HTML element.
 
 ## See Also
 
