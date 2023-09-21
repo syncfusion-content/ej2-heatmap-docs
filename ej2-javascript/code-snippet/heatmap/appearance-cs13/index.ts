@@ -57,6 +57,10 @@ let heatmap: HeatMap = new HeatMap({
         labelTemplate:
             "<div><img style='width:20px;height:20px;' src='${image}'/> </div>"
     },
+    paletteSettings: {
+        palette: [{ color: '#C06C84' }, { color: '#6C5B7B' }, { color: '#355C7D' }],
+        type: 'Gradient',
+    },
     dataSourceSettings: {
         isJsonData: true,
         adaptorType: 'Table',
