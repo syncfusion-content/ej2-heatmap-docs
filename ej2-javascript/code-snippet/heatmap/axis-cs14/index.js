@@ -5,11 +5,12 @@ var heatmapData = [
 
 var heatmap = new ej.heatmap.HeatMap({
   xAxis: {
-    labels: ['Actual <br/> Accept', 'Actual <br/> Reject'],
-    opposedPosition: true
+    labels: ['Actual<br>Accept', 'Actual<br>Reject'],
+    opposedPosition: true,
   },
   yAxis: {
-    labels: ['Actual <br/> Accept', 'Actual <br/> Reject'],
+    labels: ['Actual<br>Accept', 'Actual<br>Reject'],
+    maxLabelLength: 50,
   },
   dataSource: heatmapData
 });
