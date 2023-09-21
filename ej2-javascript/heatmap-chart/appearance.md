@@ -339,7 +339,6 @@ Any HTML elements can be added as a template in the data labels by using the [la
 
 The following examples show various data binding methods in the HeatMap using the `labelTemplate` property.
 
-
 ### Array binding
 
 By including `${value}` in the template content, the value from the data source for the corresponding cell can be displayed in the HeatMap cell as data label template content. Additionally, the x-axis and y-axis label values can be displayed by including `${xLabel}` and `${yLabel}` in the template content.
