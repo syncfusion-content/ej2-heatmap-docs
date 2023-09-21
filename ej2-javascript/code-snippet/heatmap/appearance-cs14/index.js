@@ -21,7 +21,7 @@ var heatmapData = [
 
 var heatmap = new ej.heatmap.HeatMap({
     titleSettings: {
-        text: 'Commercial Aviation Accidents and Fatalities by year 2012 - 2017',
+        text: 'Commercial Aviation Accidents and Fatalities by year 2015 - 2017',
         textStyle: {
             size: '15px',
             fontWeight: '500',
@@ -30,7 +30,7 @@ var heatmap = new ej.heatmap.HeatMap({
         },
     },
     xAxis: {
-        labels: ['2017', '2016', '2015'],
+        labels: ['2015', '2016', '2017'],
     },
     yAxis: {
         labels: ['Jan-Feb', 'Mar-Apr', 'May-Jun', 'Jul-Aug', 'Sep-Oct', 'Nov-Dec'],
