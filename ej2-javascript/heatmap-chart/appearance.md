@@ -333,7 +333,7 @@ The format of the data label, such as currency, decimal, percent etc. can be cha
 {% previewsample "page.domainurl/code-snippet/heatmap/appearance-cs10" %}
 {% endif %}
 
-### Data label template
+### Template
 
 Any HTML elements can be added as a template in the data labels by using the [labelTemplate](../api/heatmap/cellSettings/#labeltemplate) property of [cellSettings](../api/heatmap/cellSettings) in the HeatMap.
 
