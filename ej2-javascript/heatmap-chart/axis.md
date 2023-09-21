@@ -216,7 +216,7 @@ The text style of the axis labels can be customized using the following options 
 
 ### Providing line breaks
 
-Axis labels with line breaks improve the readability of the HeatMap by splitting the text on an axis into multiple lines. Line breaks are added to the axis labels by including the **"\<br>"** character in the axis label content.
+Axis labels with line breaks improve the readability of the HeatMap by splitting the text on an axis into multiple lines. The **"\<br>"** character is used to add line breaks to the axis labels.
 
 {% if page.publishingplatform == "typescript" %}
 
