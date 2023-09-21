@@ -36,7 +36,7 @@ var heatmap = new ej.heatmap.HeatMap({
         labels: ['Jan-Feb', 'Mar-Apr', 'May-Jun', 'Jul-Aug', 'Sep-Oct', 'Nov-Dec'],
     },
     cellSettings: {
-        labelTemplate: '<div> Year - ${Year} <br> Accidents - ${Accidents}</div>',
+        labelTemplate: '<div> Accidents - ${Accidents}</div>',
     },
     dataSourceSettings: {
         isJsonData: true,
