@@ -21,7 +21,7 @@ var heatmap = new ej.heatmap.HeatMap({
     },
     cellSettings: {
         labelTemplate:
-            '<div style="width:25px;height:20px;text-align:center;padding-top:2px;background-color:#5BBB9C; border: 1px solid #000000; border-radius:50%;font-weight:bold;">${value}<div>',
+            '<div style="width:25px;height:20px;text-align:center;padding-top:2px;background-color:#5BBB9C; border: 1px solid #000000; border-radius:50%;font-weight:bold;">${value}</div>',
     },
     dataSourceSettings: {
         isJsonData: false,
