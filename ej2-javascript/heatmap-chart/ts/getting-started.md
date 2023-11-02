@@ -81,9 +81,9 @@ Add an HTML div element of heat map to your `index.html`. `[src/index.html]`
 </head>
 
 <body>
-     <!--container which is going to render the Heatmap-->
-     <div id='element'>
-     </div>
+    <!--container which is going to render the Heatmap-->
+    <div id='element'>
+    </div>
 </body>
 
 </html>
