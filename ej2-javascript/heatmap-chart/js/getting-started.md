@@ -82,17 +82,38 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 
 ### Using CDN link for script and style reference
 
-**Step 1:** Create an app folder `myapp` for the Essential JS 2 JavaScript controls.
+**Step 1:** Create an app folder `quickstart` for the Essential JS 2 JavaScript controls.
 
-**Step 2:** The Essential JS 2 control's global scripts and styles are already hosted in the below CDN link formats.
+**Step 2:** The Essential JS 2 control's common scripts and styles are already hosted in the below CDN link formats.
 
-**Syntax:**
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+**Common Control Scripts:**
+> Syntax: `https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/dist/ej2.min.js`
 
 **Example:**
-> Script: [`http://cdn.syncfusion.com/ej2/ej2-heatmap/dist/global/ej2-heatmap.min.js`](http://cdn.syncfusion.com/ej2/ej2-heatmap/dist/global/ej2-heatmap.min.js)
+> Script: [`https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/dist/ej2.min.js)
+>
 
-**Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `div` element and initiate the `Essential JS 2 Heatmap` control in the index.html by using following code.
+**or**
+
+**Individual Control Scripts:**
+
+**Syntax**
+>`https://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/ej2-heatmap/dist/global/ej2-heatmap.min.js`
+>
+>`http://cdn.syncfusion.com/ej2/{RELEASE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+
+**Example:**
+> Heatmap Script: [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-heatmap/dist/global/ej2-heatmap.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-heatmap/dist/global/ej2-heatmap.min.js)
+>
+>Dependency Scripts
+>
+> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/dist/global/ej2-base.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-base/dist/global/ej2-base.min.js)
+>
+> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-data/dist/global/ej2-data.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-data/dist/global/ej2-data.min.js)
+>
+> [`https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js`](https://cdn.syncfusion.com/ej2/23.1.36/ej2-svg-base/dist/global/ej2-svg-base.min.js)
+
+**Step 3:** Create a HTML page (index.html) in `quickstart` location and add the CDN link references. Now, add the `div` element and initiate the `Essential JS 2 Heatmap` control in the index.html by using following code.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
