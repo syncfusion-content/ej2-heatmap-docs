@@ -11,6 +11,19 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## HeatMap chart control
 
+HeatMap has built-in accessibility features like WAI-ARIA attributes.
+
+## WAI-ARIA attributes
+
+The HeatMap component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the HeatMap component:
+
+| Attributes | Purpose |
+| --- | --- |
+| `role=region` | It specifies the HeatMap areas that do not support interactive functions like cell selection. |
+| `aria-label` | Provides an accessible name for the title, legend title, legend item labels and data labels. |
+
+## Screen reading in HeatMap
+
 HeatMap has built-in accessibility features like screen reading. Screen reading in the HeatMap control allows all users, regardless of ability or disability, to use the control. The following HeatMap elements will be read aloud with screen reading software like Narrator for Windows.
 
 | Elements | Description |
